@@ -4,6 +4,7 @@ const closeBtn = document.getElementById("close-btn");
 
 const showToast = () => {
     toast.style.display = "block";
+    btn.removeEventListener("click", showToast);
     setTimeout(() => {
         toast.style.display = "none";
     }, 2000);
