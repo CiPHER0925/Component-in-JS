@@ -7,6 +7,7 @@ const showToast = () => {
     btn.removeEventListener("click", showToast);
     setTimeout(() => {
         toast.style.display = "none";
+        btn.addEventListener("click", showToast);
     }, 2000);
 }
 
