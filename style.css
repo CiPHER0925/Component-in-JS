@@ -9,8 +9,11 @@ body {
     position: relative;
 }
 
+.toast {
+    display: none;
+}
+
 .toast-wrapper {
-    display: block;
     width: 21rem;
     height: 4rem;
     display: flex;
