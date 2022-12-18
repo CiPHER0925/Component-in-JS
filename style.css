@@ -2,4 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.toast-wrapper {
+    display: block;
+    width: 21rem;
+    height: 4rem;
+    display: flex;
+    background: #38A169;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 82%;
+    top: 100%;
+    animation: moveInRight 0.5s ease-out;
+}
+
+.tick {
+    padding: 0.5rem;
+}
+
+.fa-check {
+    width: 20px;
+    color: #38A169;
+    font-size: 14px;
+    background: #fff;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.toast-text-box {
+    padding: 0.5rem;
+}
+
+.toast-heading {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.toast-description {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.close-toast-btn {
+    margin-left: 0.8rem;
+    padding: 0.5rem;
+}
+
+.close-btn {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1rem;
 }
