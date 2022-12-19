@@ -21,7 +21,6 @@ btn.addEventListener("click", showToast);
 closeBtn.addEventListener("click", closeToast)
 
 
-
 //addind and removing eventlistner
 // const showToast = () => {
 //     toast.style.display = "block";
