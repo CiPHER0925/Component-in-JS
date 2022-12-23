@@ -5,8 +5,14 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+.toast-component-wrapper {
+    margin: 1rem;
+    height: 8rem;
     position: relative;
+}
+
+.heading {
+    text-align: center;
 }
 
 .toast {
@@ -22,7 +28,7 @@ body {
     border-radius: 5px;
     position: absolute;
     right: 10px;
-    top: 100%;
+    top: 10%;
     animation: moveInRight 0.5s ease-out;
 }
 
@@ -82,4 +88,72 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+
+
+/* tooltip */
+
+.tooltip-component-wrapper {
+    position: relative;
+}
+
+.hover-text {
+    margin: 1rem;
+    color: #616161;
+    padding: 10px;
+    border: 1px solid #b6b6b6;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.hovered-text {
+    display: none;
+    background-color: #2D3748;
+    width: 110px;
+    font-size: 0.9rem;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    left: 0.8rem;
+    top: 51.5%;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.hover-text:hover + .hovered-text {
+    display: block;
+}
+
+.btn-tooltip {
+    margin: 2rem 1rem;
+    position: relative;
+}
+
+.btn {
+    background-color: #EDF2F7;
+    color: #333a4b;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.close-text {
+    display: none;
+    background-color: #2D3748;
+    width: 115px;
+    font-size: 0.9rem;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    position: absolute;
+    left: 3rem;
+    top: 120%;
+}
+
+.btn:hover + .close-text {
+    display: block;
 }

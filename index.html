@@ -10,25 +10,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="show-toast" class="toast">
-        <div class="toast-wrapper">
-            <div class="tick">
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <div class="toast-text-box">
-                <p class="toast-heading">Account created</p>
-                <p class="toast-description">We've created account for you.</p>
-            </div>
-            <div class="close-toast-btn">
-                <button id="close-btn" class="close-btn">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+    <div class="toast-component-wrapper">
+        <h2 class="heading">Toast</h2>
+        <div id="show-toast" class="toast">
+            <div class="toast-wrapper">
+                <div class="tick">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="toast-text-box">
+                    <p class="toast-heading">Account created</p>
+                    <p class="toast-description">We've created account for you.</p>
+                </div>
+                <div class="close-toast-btn">
+                    <button id="close-btn" class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
             </div>
         </div>
+        <button id="btn-toast" class="btn-toast">Show Toast</button>
     </div>
 
-    <button id="btn-toast" class="btn">Show Toast</button>
-
+    <div class="tooltip-component-wrapper">
+        <h2 class="heading">Tooltip</h2>
+        <p class="hover-text">Hover me </p>
+        <p class="hovered-text">Hey, I'm here!</p>
+        <div class="btn-tooltip">
+            <button id="close-btn-tooltip" class="btn">Close on Click - true(default)</button>
+            <p id="close-text" class="close-text">I close on click</p>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/92bd300a98.js" crossorigin="anonymous"></script>
     <script src="/index.js"></script>
