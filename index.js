@@ -41,6 +41,7 @@ const closeTooltip = () => {
 
     const closeText = () => {
         tooltip.style.display = "none";
+        console.log("clicked");
     }
     btn.addEventListener("click", closeText);
 }
