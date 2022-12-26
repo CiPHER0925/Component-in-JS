@@ -39,10 +39,18 @@ const closeTooltip = () => {
     const btn = document.getElementById("close-btn-tooltip");
     const tooltip = document.getElementById("close-text");
 
+    btn.addEventListener("mouseover", () => {
+        tooltip.style.display = "block";
+    })
+
+    btn.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none"
+    })
+
     const closeText = () => {
         tooltip.style.display = "none";
-        console.log("clicked");
     }
     btn.addEventListener("click", closeText);
+    tooltip.style.display = "block"; //it will reset the value to default
 }
 closeTooltip();
